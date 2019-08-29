@@ -3,7 +3,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import { Toolbar, IconButton, AppBar, Typography } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 import I from "@material-ui/icons/ExpandMore";
-
+import SearchIcon from '@material-ui/icons/Search';
+import InputBase from '@material-ui/core/InputBase';
 import image from "../../download.png";
 import style from "./header";
 
@@ -58,6 +59,19 @@ export default function Header() {
               </Typography>
               <I className={classes.icon} />
             </div>
+          </div>
+          <div className={classes.search}>
+            <div className={classes.searchIcon}>
+              <SearchIcon />
+            </div>
+            <InputBase
+              placeholder="Search…"
+              classes={{
+                root: classes.inputRoot,
+                input: classes.inputInput,
+              }}
+              inputProps={{ 'aria-label': 'search' }}
+            />
           </div>
         </Toolbar>
       </AppBar>

@@ -1,12 +1,9 @@
-// export default {
-//     root: {
-//         flexgrow:1,
-//         backgroundColor:'black'
-//     },
-//     paper: {
-//         padding: theme.spacing(2),
-//         textAlign: 'center',
-//         color: theme.palette.text.secondary,
-//       },
-
-// }
+export default {
+    options: {
+      marginLeft: '90%',
+      marginTop: '32px',
+      backgroundColor: '#e2e2e9',
+      width: '32px',
+      cursor: 'pointer'
+    }
+  }
